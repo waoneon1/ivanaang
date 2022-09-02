@@ -42,7 +42,7 @@
 			<div class="isotope-item col-xs-6 col-md-4 col-lg-3 text-center fashion studio session">
 				<div class="vertical-item content-absolute vertical-center portfolio-filters">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/static/images/models_square/01.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png" alt="">
 					</div>
 					<div class="item-content">
 						<div class="display_table">
@@ -65,7 +65,7 @@
 			<div class="isotope-item col-xs-6 col-md-4 col-lg-3 text-center fashion studio session">
 				<div class="vertical-item content-absolute vertical-center portfolio-filters">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/static/images/models_square/01.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -234,7 +234,7 @@
 			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion studio session">
 				<div class="vertical-item portfolio-load-more content-absolute vertical-center text-center">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/static/images/models_square/01.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png" alt="">
 					</div>
 					<div class="item-content">
 						<div class="display_table">
