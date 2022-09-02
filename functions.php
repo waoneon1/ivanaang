@@ -138,14 +138,17 @@ add_action( 'widgets_init', 'ivang_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ivang_scripts() {
+
+	wp_enqueue_style( 'ivang-look-bootstrap', get_template_directory_uri() . '/assets/look/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'ivang-look-main', get_template_directory_uri() . '/assets/look/css/main.css', array(), _S_VERSION );
+	wp_enqueue_style( 'ivang-look-animations', get_template_directory_uri() . '/assets/look/css/animations.css', array(), _S_VERSION );
+	wp_enqueue_style( 'ivang-look-fonts', get_template_directory_uri() . '/assets/look/css/fonts.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ivang-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'ivang-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'ivang-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'ivang-modernizr', get_template_directory_uri() . '/assets/look/js/vendor/modernizr-2.6.2.min.js', array(), _S_VERSION, false );
+	wp_enqueue_script( 'ivang-compressed', get_template_directory_uri() . '/assets/look/js/compressed.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'ivang-main', get_template_directory_uri() . '/assets/look/js/main.js', array(), _S_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'ivang_scripts' );
 
