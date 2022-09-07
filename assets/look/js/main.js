@@ -796,7 +796,7 @@ function windowLoadInit() {
 	var $breadcrumbs = jQuery('.theme_breadcrumbs');
 	if ($breadcrumbs.length) {
 		var rand = Math.floor(Math.random() * (7 - 1)) + 1;
-		var bgimagePath = "url('./images/parallax/breadcrumbs" + rand + ".jpg')";
+		var bgimagePath = "url('../../../assets/images/parallax/breadcrumbs" + rand + ".jpg')";
 		$breadcrumbs.attr("style", "background-image: " + bgimagePath);
 	}
 

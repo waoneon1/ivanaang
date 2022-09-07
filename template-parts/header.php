@@ -35,38 +35,13 @@
 							<!-- main nav start -->
 							<nav class="mainmenu_wrapper">
 								<ul class="mainmenu nav sf-menu">
-									<li>
-										<a href="#">About Me</a>
-									</li>
-									<li>
-										<a href="#">Testimoni</a>
-									</li>
-									<li>
-										<a href="#">Portofolio</a>
-										<ul>
-											<li>
-												<a href="models.html">Wedding</a>
-											</li>
-											<li>
-												<a href="models2.html">Prewedding</a>
-											</li>
-											<li>
-												<a href="model-single.html">Graduation</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Videos</a>
-									</li>
-									<li>
-										<a href="#">Academy</a>
-									</li>
-									<li>
-										<a href="#">Shop</a>
-									</li>
-									<li>
-										<a href="#">Blog</a>
-									</li>
+									<?php $nav = get_field('header_navigation', 'option'); ?>
+									<?php foreach ($nav as $key => $item): ?>
+										<?php $active = link_active($item['list']['url']) ?>
+										<li class="<?php echo $active ?>">
+											<a href="<?php echo $item['list']['url'] ?>"><?php echo $item['list']['title'] ?></a>
+										</li>
+									<?php endforeach ?>
 								</ul>
 							</nav>
 							<!-- eof main nav -->

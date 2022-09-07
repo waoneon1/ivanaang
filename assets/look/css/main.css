@@ -5010,7 +5010,7 @@ body.active-side-header.slide-right .page_header_side {
 }
 
 .page_testimonials.parallax {
-	background-image: url("../../../static/images/parallax/progress.jpg");
+	background-image: url("../../../assets/images/parallax/progress.jpg");
 }
 
 .page_testimonials .flex-control-paging li {

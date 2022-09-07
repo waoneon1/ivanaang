@@ -183,3 +183,26 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
+
+// Link Active
+function link_active($link) {
+	global $pagename;
+	$active = '';
+	$url = explode('/', $link);
+
+	if (get_query_var( 'cat' ) || is_singular('post')) {
+		// Category => Blog
+		$active = in_array("blog", $url) ? 'active' : '';
+	} elseif (is_singular('works')) {
+		// CPT => work
+		$active = in_array("latest-works", $url) ? 'active' : '';
+	} elseif (is_front_page()) {
+		// Homepage
+		$active = $link ==  home_url( '/' ) ? 'active' : '';
+	} elseif ($pagename) {
+		// Default
+		$active = $link == home_url( $pagename . '/' ) ? 'active' : '';
+	} 
+
+	return $active;
+}
