@@ -1,0 +1,409 @@
+<section class="page_breadcrumbs ls ms parallax section_padding_bottom_15 section_padding_top_75"
+	style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/images/parallax/breadcrumbs4.jpg'); background-position: 50% 0px;" 
+>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<div class="heading text-center bottom_border">
+					<p class="text-uppercase josefin grey fontsize_20">Last News</p>
+					<h1 class="section_header topmargin_5">Blog</h1>
+				</div>
+				<ol class="breadcrumb">
+					<li>
+						<a href="./">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">Pages</a>
+					</li>
+					<li class="active"> Blog</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ls page_portfolio section_padding_top_110">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="isotope_container isotope blog_isotope row masonry-layout columns_margin_bottom_30" data-filters=".blog_filters">
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion studio session news">
+
+						<div class="vertical-item vertical-center blog-filters-container">
+							<div class="item-content">
+								<div class="display_table">
+									<div class="display_table_cell text-left">
+										<div class="heading bottommargin_45">
+											<p class="text-uppercase josefin grey fontsize_20">Blog</p>
+											<h2 class="section_header topmargin_5 bottommargin_0">Last News</h2>
+										</div>
+										<div class="filters blog_filters">
+											<a href="#" data-filter="*" class="selected">All</a>
+											<a href="#" data-filter=".fashion">Fashion</a>
+											<a href="#" data-filter=".studio">Studio</a>
+											<a href="#" data-filter=".session">Session</a>
+											<a href="#" data-filter=".news">World News</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/15.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Elizabeth</span> - model experiment, Seoul, Korea.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion studio">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/03.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Fashion</a>,
+									<a href="#">Studio</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Nora</span> - model experience in 17 years, Bangkok, Thailand.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/23.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Fiona</span> - first modeling experience, Seoul, Korea..</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session studio">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/06.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>,
+									<a href="#">Studio</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Bess</span> - model experience in the winter-spring season 2015.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/21.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Lucille</span> - the first modeling experience in 13 years, Tokyo.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session fashion">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/01.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>,
+									<a href="#">Fashion</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Rhoda</span> - first modeling experience, Thailand.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session studio">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/18.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>,
+									<a href="#">Studio</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Edna</span> - model experience in 15 years, Mumbai, India.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session fashion">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/16.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>,
+									<a href="#">Fashion</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Frances</span> - first modeling experience, Shanghai, China.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 news">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/11.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">World news</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">Cinderella story in the pages of the portal Niklife.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion studio">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/09.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">fashion</a>,
+									<a href="#">studio</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Susan</span> - for "Laha" magazine, Beirut, Lebanon.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+						<article class="vertical-item item-type1 post">
+							<div class="item-media">
+								<img src="https://html.modernwebtemplates.com/look/images/models_portrait/02.jpg" alt="s">
+							</div>
+							<div class="item-content">
+								<div class="categories-links bottommargin_5 highlight">
+									<a href="#">Session</a>
+								</div>
+								<p class="fontsize_18 bold darklinks2">
+									<a href="blog-single-right.html">
+										<span class="text-uppercase">Beatrice</span> - for lookbook TM "WHO.A.U.", Korea.</a>
+								</p>
+								<div class="item-meta">
+									<p>
+										Suspendisse vulputate nisl ut magna iaculis, vitae congue risus dictum. Integer dui.
+									</p>
+								</div>
+								<div class="post-social lightgreylinks">
+									<a href="#" class="social-icon soc-facebook"></a>
+									<a href="#" class="social-icon soc-twitter"></a>
+									<a href="#" class="social-icon soc-google"></a>
+									<a href="#" class="social-icon soc-instagram"></a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+
+				</div>
+				<!-- eof .isotope_container.row -->
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ls page_portfolio section_padding_top_15 section_padding_bottom_110">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<div class="with_background line-height0">
+					<ul class="pagination @@size">
+						<li>
+							<a href="#">Prev</a>
+						</li>
+						<li class="active">
+							<a href="#">01</a>
+						</li>
+						<li>
+							<a href="#">02</a>
+						</li>
+						<li>
+							<a href="#">03</a>
+						</li>
+						<li>
+							<a href="#">04</a>
+						</li>
+						<li>
+							<a href="#">05</a>
+						</li>
+						<li>
+							<a href="#">Next</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

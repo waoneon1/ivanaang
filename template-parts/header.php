@@ -23,7 +23,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-2 col-md-4 col-xs-12">
-							<a href="./" class="logo top_logo">
+							<a href="<?php echo home_url( '/' ) ?>" class="logo top_logo">
 								<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" alt="">
 							</a>
 							<!-- header toggler -->
