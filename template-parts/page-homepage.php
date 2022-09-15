@@ -164,7 +164,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/15.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/15.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -192,7 +192,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion studio">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/03.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/03.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -221,7 +221,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/23.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/23.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -249,7 +249,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session studio">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/15.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/15.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -278,7 +278,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/03.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/03.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -306,7 +306,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session fashion">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/23.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/23.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -335,7 +335,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session studio">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/15.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/15.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -364,7 +364,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session fashion">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/03.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/03.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -393,7 +393,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 news">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/23.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/23.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -420,7 +420,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion studio">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/15.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/15.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
@@ -449,7 +449,7 @@
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_portrait/03.jpg" alt="s">
+						<img src="https://html.modernwebtemplates.com/look/images/models_portrait/03.jpg" alt="s">
 					</div>
 					<div class="item-content">
 						<div class="categories-links bottommargin_5 highlight">
