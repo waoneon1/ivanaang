@@ -49,3 +49,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+ol.breadcrumb {
+	display: none;
+}
+.autotrim-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+  height: 60;
+  min-height: 60;
+}
+.item-type1.post:hover .autotrim-2 {
+	overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  position: relative;
+  height: 120;
+  min-height: 120;
+}

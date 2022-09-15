@@ -115,6 +115,19 @@
 	</div>
 </section>
 
+<?php 
+	$data_works = [
+		['image' => '01.png', 'category' => 'fashion'],
+		['image' => '02.png', 'category' => 'studio'],
+		['image' => '03.png', 'category' => 'session'],
+		['image' => '04.png', 'category' => 'fashion'],
+		['image' => '05.png', 'category' => 'studio'],
+		['image' => '06.png', 'category' => 'session'],
+		['image' => '07.png', 'category' => 'fashion'],
+		['image' => '08.png', 'category' => 'studio'],
+		['image' => '09.png', 'category' => 'session']
+	];
+?>
 <section class="ls columns_margin_0 columns_padding_0 page_portfolio">
 	<div class="container-fluid">
 		<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
@@ -127,7 +140,7 @@
 						<div class="display_table">
 							<div class="display_table_cell text-left">
 								<div class="heading bottommargin_35">
-									<p class="text-uppercase josefin grey fontsize_20">Portofolio</p>
+									<p class="text-uppercase josefin grey fontsize_20">Brief Introduction</p>
 									<h2 class="section_header topmargin_5 bottommargin_0">Our beautiful works</h2>
 								</div>
 								<div class="filters isotope_filters">
@@ -148,183 +161,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
-				<div class="vertical-item gallery-item content-absolute text-center">
+
+			<?php foreach ($data_works as $key => $value): ?>
+				<div class="isotope-item col-sm-6 col-md-4 col-lg-3 <?php echo $value['category'] ?>">
+					<div class="vertical-item gallery-item content-absolute text-center">
+						<div class="item-media">
+							<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>" alt="">
+							<div class="media-links">
+								<div class="links-wrap">
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php endforeach ?>
+
+			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion studio session">
+				<div class="vertical-item portfolio-load-more content-absolute vertical-center text-center">
 					<div class="item-media">
 						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
+					</div>
+					<div class="item-content">
+						<div class="display_table">
+							<div class="display_table_cell darklinks">
+								<a href="" class="theme_link fontsize_20">Load more works</a>
 							</div>
 						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Jean Waters</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/02.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/02.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Eleanor Lucas</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 session">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/03.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/03.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Isabella Mack</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/04.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/04.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Lucile Hall</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/05.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/05.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Bettie Bates</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 session">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/06.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/06.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Katharine Collier</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/07.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/07.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Sally Fleming</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/08.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/08.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Cecelia Wright</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 session">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/09.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/09.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Julia Gibbs</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/08.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/02.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Cecelia Wright</a>
-						</h4>
 					</div>
 				</div>
 			</div>

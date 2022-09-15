@@ -36,6 +36,19 @@
 	<!-- eof flexslider -->
 </section>
 
+<?php 
+	$data_works = [
+		['image' => '01.png', 'category' => 'fashion'],
+		['image' => '02.png', 'category' => 'studio'],
+		['image' => '03.png', 'category' => 'session'],
+		['image' => '04.png', 'category' => 'fashion'],
+		['image' => '05.png', 'category' => 'studio'],
+		['image' => '06.png', 'category' => 'session'],
+		['image' => '07.png', 'category' => 'fashion'],
+		['image' => '08.png', 'category' => 'studio'],
+		['image' => '09.png', 'category' => 'session']
+	];
+?>
 <section class="ls columns_margin_0 columns_padding_0 page_portfolio">
 	<div class="container-fluid">
 		<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
@@ -69,168 +82,22 @@
 					</div>
 				</div>
 			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/01.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
+
+			<?php foreach ($data_works as $key => $value): ?>
+				<div class="isotope-item col-sm-6 col-md-4 col-lg-3 <?php echo $value['category'] ?>">
+					<div class="vertical-item gallery-item content-absolute text-center">
+						<div class="item-media">
+							<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>" alt="">
+							<div class="media-links">
+								<div class="links-wrap">
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>"></a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Jean Waters</a>
-						</h4>
-					</div>
 				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/02.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/02.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Eleanor Lucas</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 session">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/03.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/03.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Isabella Mack</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/04.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/04.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Lucile Hall</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/05.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/05.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Bettie Bates</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 session">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/06.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/06.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Katharine Collier</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/07.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/07.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Sally Fleming</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 studio">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/08.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/08.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Cecelia Wright</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 session">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/09.png" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/09.png"></a>
-								<a class="p-link" title="" href="gallery-single.html"></a>
-							</div>
-						</div>
-					</div>
-					<div class="item-content theme_background">
-						<h4 class="item-meta">
-							<a href="model-single.html">Julia Gibbs</a>
-						</h4>
-					</div>
-				</div>
-			</div>
+			<?php endforeach ?>
+
 			<div class="isotope-item col-sm-6 col-md-4 col-lg-3 fashion studio session">
 				<div class="vertical-item portfolio-load-more content-absolute vertical-center text-center">
 					<div class="item-media">
@@ -303,9 +170,9 @@
 						<div class="categories-links bottommargin_5 highlight">
 							<a href="#">Session</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
-								<span class="text-uppercase">Elizabeth</span> - model experiment, Seoul, Korea.</a>
+								<span class="text-uppercase">Elizabeth</span> - model experiment, Seoul, Korea model experiment, Seoul, Korea.</a>
 						</p>
 						<div class="item-meta">
 							<p>
@@ -332,7 +199,7 @@
 							<a href="#">Fashion</a>,
 							<a href="#">Studio</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Nora</span> - model experience in 17 years, Bangkok, Thailand.</a>
 						</p>
@@ -360,9 +227,9 @@
 						<div class="categories-links bottommargin_5 highlight">
 							<a href="#">Session</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
-								<span class="text-uppercase">Fiona</span> - first modeling experience, Seoul, Korea..</a>
+								<span class="text-uppercase">Fiona</span> - first modeling experience, Seoul, Korea</a>
 						</p>
 						<div class="item-meta">
 							<p>
@@ -389,7 +256,7 @@
 							<a href="#">Session</a>,
 							<a href="#">Studio</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Bess</span> - model experience in the winter-spring season 2015.</a>
 						</p>
@@ -417,7 +284,7 @@
 						<div class="categories-links bottommargin_5 highlight">
 							<a href="#">Session</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Lucille</span> - the first modeling experience in 13 years, Tokyo.</a>
 						</p>
@@ -446,7 +313,7 @@
 							<a href="#">Session</a>,
 							<a href="#">Fashion</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Rhoda</span> - first modeling experience, Thailand.</a>
 						</p>
@@ -475,7 +342,7 @@
 							<a href="#">Session</a>,
 							<a href="#">Studio</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Edna</span> - model experience in 15 years, Mumbai, India.</a>
 						</p>
@@ -504,7 +371,7 @@
 							<a href="#">Session</a>,
 							<a href="#">Fashion</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Frances</span> - first modeling experience, Shanghai, China.</a>
 						</p>
@@ -532,7 +399,7 @@
 						<div class="categories-links bottommargin_5 highlight">
 							<a href="#">World news</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">Cinderella story in the pages of the portal Niklife.</a>
 						</p>
 						<div class="item-meta">
@@ -560,7 +427,7 @@
 							<a href="#">fashion</a>,
 							<a href="#">studio</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Susan</span> - for "Laha" magazine, Beirut, Lebanon.</a>
 						</p>
@@ -588,7 +455,7 @@
 						<div class="categories-links bottommargin_5 highlight">
 							<a href="#">Session</a>
 						</div>
-						<p class="fontsize_18 bold darklinks2">
+						<p class="fontsize_18 bold darklinks2 autotrim-2">
 							<a href="blog-single-right.html">
 								<span class="text-uppercase">Beatrice</span> - for lookbook TM "WHO.A.U.", Korea.</a>
 						</p>

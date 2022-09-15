@@ -88,7 +88,7 @@
 									<div class="quote-sign josefin grey bottommargin_50"></div>
 									<div class="heading text-center">
 										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">About us</p>
+										<p class="josefin text-uppercase grey">Testimonial</p>
 									</div>
 									<div class="row">
 										<div class="col-md-8 col-md-offset-2">
@@ -121,7 +121,7 @@
 									<div class="quote-sign josefin grey bottommargin_50"></div>
 									<div class="heading text-center">
 										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">About us</p>
+										<p class="josefin text-uppercase grey">Testimonial</p>
 									</div>
 									<div class="row">
 										<div class="col-md-8 col-md-offset-2">
@@ -154,7 +154,7 @@
 									<div class="quote-sign josefin grey bottommargin_50"></div>
 									<div class="heading text-center">
 										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">About us</p>
+										<p class="josefin text-uppercase grey">Testimonial</p>
 									</div>
 									<div class="row">
 										<div class="col-md-8 col-md-offset-2">
