@@ -33,7 +33,17 @@
 				<div class="storefront-sorting muted_background bottommargin_60 clearfix">
 
 					<form class="form-inline">
-
+						<div class="form-group">
+							<label class="grey" for="orderby">Sort By:</label>
+							<select class="form-control orderby" name="orderby" id="orderby">
+								<option value="menu_order" selected="">Default</option>
+								<option value="popularity">Popularity</option>
+								<option value="rating">Rating</option>
+								<option value="date">Newness</option>
+								<option value="price">Low To High</option>
+								<option value="price-desc">High To Low</option>
+							</select>
+						</div>
 
 						<div class="form-group">
 							<a href="#" id="sort_view">

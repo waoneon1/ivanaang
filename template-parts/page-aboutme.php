@@ -34,10 +34,10 @@
 				</div>
 				<p>Meticulous, artistically focused , perfectionist, committed , unbridled creativity . Words I identify with , and bring to the table with 12 years of make up artistry honed through a journey of partnership and training with Jakarta’s premiere make up studios , catering to an international clientele with a myriad of stylistic needs.</p>
 				<p>My passion in make up is fuelled by my desire to gently reveal  the  natural god-given beauty in my clients through subtle and artful accentuation through proper application and techniques with the use of right products that suit my clients preferences.</p>
-				<!-- <p>To be given the honour of preparing the bride for her wedding , an event that is to be etched in her memories for her lifetime with her chosen one , is a responsibly I take seriously and without compromise .  The bride can be rest assured , walking down the aisle in beauty and grace , knowing that every detail is in place and perfect .</p> -->
+				<p>To be given the honour of preparing the bride for her wedding , an event that is to be etched in her memories for her lifetime with her chosen one , is a responsibly I take seriously and without compromise .  The bride can be rest assured , walking down the aisle in beauty and grace , knowing that every detail is in place and perfect .</p>
 			</div>
 			<div class="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right to_animate" data-animation="fadeInRight">
-				<img src="<?php echo get_template_directory_uri() ?>/assets/images/model1.png" alt="" class="top-overlap-small right-offset">
+				<img src="<?php echo get_template_directory_uri() ?>/assets/images/model1.png" alt="" class="right-offset">
 			</div>
 		</div>
 	</div>
