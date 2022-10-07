@@ -22,6 +22,17 @@ function ivang_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	$events = get_field('event', 'option');
+	$currentDate = date('d/m/Y');
+	$eventClass = '';
+	foreach ($events as $key => $event) {
+		if ($currentDate >= $event['event_start'] && $currentDate < $event['event_end']) {
+			$eventClass = 'event-onbody';
+		}
+	}
+
+	$classes[] = $eventClass;
+
 	return $classes;
 }
 add_filter( 'body_class', 'ivang_body_classes' );

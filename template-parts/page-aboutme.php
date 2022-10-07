@@ -37,148 +37,87 @@
 				<p>To be given the honour of preparing the bride for her wedding , an event that is to be etched in her memories for her lifetime with her chosen one , is a responsibly I take seriously and without compromise .  The bride can be rest assured , walking down the aisle in beauty and grace , knowing that every detail is in place and perfect .</p>
 			</div>
 			<div class="col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-6 text-center text-lg-right to_animate" data-animation="fadeInRight">
-				<img src="<?php echo get_template_directory_uri() ?>/assets/images/model1.png" alt="" class="right-offset">
+				<img src="<?php echo get_template_directory_uri() ?>/assets/images/model3.png" alt="" class="right-offset">
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="cs parallax page_testimonials section_padding_100">
-	<div class="flexslider">
-		<ul class="slides">
-			<li>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center text-md-right">
-							<div class="slide_description_wrapper">
-								<div class="slide_description text-center">
-									<div class="quote-sign josefin grey bottommargin_50"></div>
-									<div class="heading text-center">
-										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">Testimonial</p>
-									</div>
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2">
-											<blockquote class="no-border margin_0">
-												Mauris hendrerit eget orci ut pretium. Donec purus est, aliquet tempus rhoncus a, sollicitudin in erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vel lacinia enim, a feugiat lorem. In vitae leo
-												vulputate libero aliquam lacinia. Mauris rhoncus vel neque vitae.
+<section class="ls section_padding_top_110 columns_margin_0 services">
+	<div class="container">
+		<div class="row">
 
-												<div class="item-meta fontsize_16 topmargin_75">
-													<span class="bold josefin fontsize_20 grey">Donald Phelps - </span> Manager Co.
-												</div>
-											</blockquote>
-										</div>
-									</div>
+			<div class="col-md-push-3 col-md-9 col-lg-push-4 col-lg-8">
+				<div class="heading bottommargin_60">
+					<p class="text-uppercase josefin grey fontsize_20">What we do</p>
+					<h2 class="section_header bottommargin_0">Our services</h2>
+				</div>
+				<div class="row topmargin_5">
+					<div class="col-sm-6">
+						<div class="teaser media bottommargin_55">
+							<div class="media-left">
+								<div class="teaser_icon highlight size_normal">
+									<i class="flaticon-sports"></i>
 								</div>
 							</div>
-							<!-- eof .slide_description_wrapper -->
+							<div class="media-body">
+								<h4 class="media-heading">
+									<a href="services.html">Prewedding</a>
+								</h4>
+								<p>Quisque vel tincidunt nisi. Nam vitae lorem vel erat laoreet egestas eu non enim. Nulla vitae facilisis ex. In a maximus ligula nunc.</p>
+							</div>
 						</div>
-						<!-- eof .col-* -->
 					</div>
-					<!-- eof .row -->
-				</div>
-				<!-- eof .container -->
-			</li>
-			<li>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center text-md-right">
-							<div class="slide_description_wrapper">
-								<div class="slide_description text-center">
-									<div class="quote-sign josefin grey bottommargin_50"></div>
-									<div class="heading text-center">
-										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">Testimonial</p>
-									</div>
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2">
-											<blockquote class="no-border margin_0">
-												Fusce mollis dapibus ipsum eu tempor. Vivamus tempus, nisi quis luctus placerat, diam lectus pretium felis, a laoreet risus odio nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum feugiat augue
-												ac blandit imperdiet. Suspendisse ut massa fringilla.
-
-												<div class="item-meta fontsize_16 topmargin_75">
-													<span class="bold josefin fontsize_20 grey">Derrick Rodgers - </span> Manager
-												</div>
-											</blockquote>
-										</div>
-									</div>
+					<div class="col-sm-6">
+						<div class="teaser media bottommargin_55">
+							<div class="media-left">
+								<div class="teaser_icon highlight size_normal">
+									<i class="flaticon-megaphone"></i>
 								</div>
 							</div>
-							<!-- eof .slide_description_wrapper -->
+							<div class="media-body">
+								<h4 class="media-heading">
+									<a href="services.html">Film</a>
+								</h4>
+								<p>Vivamus gravida imperdiet tellus, consequat tincidunt dolor lobortis sed. Morbi sed sapien accumsan, pellentesque mi sed vehicula.</p>
+							</div>
 						</div>
-						<!-- eof .col-* -->
 					</div>
-					<!-- eof .row -->
-				</div>
-				<!-- eof .container -->
-			</li>
-			<li>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center text-md-right">
-							<div class="slide_description_wrapper">
-								<div class="slide_description text-center">
-									<div class="quote-sign josefin grey bottommargin_50"></div>
-									<div class="heading text-center">
-										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">Testimonial</p>
-									</div>
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2">
-											<blockquote class="no-border margin_0">
-												Mauris hendrerit eget orci ut pretium. Donec purus est, aliquet tempus rhoncus a, sollicitudin in erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vel lacinia enim, a feugiat lorem. In vitae leo
-												vulputate libero aliquam lacinia. Mauris rhoncus vel neque vitae.
-
-												<div class="item-meta fontsize_16 topmargin_75">
-													<span class="bold josefin fontsize_20 grey">Donald Phelps - </span> Manager Co.
-												</div>
-											</blockquote>
-										</div>
-									</div>
+					<div class="col-sm-6">
+						<div class="teaser media bottommargin_55">
+							<div class="media-left">
+								<div class="teaser_icon highlight size_normal">
+									<i class="flaticon-photo-camera"></i>
 								</div>
 							</div>
-							<!-- eof .slide_description_wrapper -->
+							<div class="media-body">
+								<h4 class="media-heading">
+									<a href="services.html">Makeup</a>
+								</h4>
+								<p>Pellentesque aliquet sodales libero sed interd. Sed enim ligula, ornare ac varius non, volutpat sit amet tellus. Nulla vitae urna.</p>
+							</div>
 						</div>
-						<!-- eof .col-* -->
 					</div>
-					<!-- eof .row -->
-				</div>
-				<!-- eof .container -->
-			</li>
-			<li>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center text-md-right">
-							<div class="slide_description_wrapper">
-								<div class="slide_description text-center">
-									<div class="quote-sign josefin grey bottommargin_50"></div>
-									<div class="heading text-center">
-										<h2 class="section_header bottommargin_0 grey">What people say</h2>
-										<p class="josefin text-uppercase grey">Testimonial</p>
-									</div>
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2">
-											<blockquote class="no-border margin_0">
-												Phasellus in efficitur sem. Mauris mi risus, efficitur in ultricies a, aliquam eu mi. Nullam justo mauris, venenatis id ipsum ac, ultrices gravida metus. Sed maximus augue nec mi porttitor, sed tempor elit facilisis. Vestibulum hendrerit pharetra consectetur.
-												Sed nec bibendum nisi, ut vulputate mauris.
-
-												<div class="item-meta fontsize_16 topmargin_75">
-													<span class="bold josefin fontsize_20 grey">Minerva Ferguson - </span> Founder &amp; CEO
-												</div>
-											</blockquote>
-										</div>
-									</div>
+					<div class="col-sm-6">
+						<div class="teaser media bottommargin_55">
+							<div class="media-left">
+								<div class="teaser_icon highlight size_normal">
+									<i class="flaticon-shopping-bag"></i>
 								</div>
 							</div>
-							<!-- eof .slide_description_wrapper -->
+							<div class="media-body">
+								<h4 class="media-heading">
+									<a href="services.html">Fashion</a>
+								</h4>
+								<p>Vivamus gravida imperdiet tellus, consequat tincidunt dolor lobortis sed. Morbi sed sapien accumsan, pellentesque mi sed.</p>
+							</div>
 						</div>
-						<!-- eof .col-* -->
 					</div>
-					<!-- eof .row -->
 				</div>
-				<!-- eof .container -->
-			</li>
-		</ul>
+			</div>
+			<div class="col-md-pull-9 col-md-3 col-lg-pull-8 col-lg-4 text-center text-md-right to_animate" data-animation="fadeInLeft">
+				<img src="<?php echo get_template_directory_uri() ?>/assets/images/model2.png" alt="" class="top-overlap-small">
+			</div>
+		</div>
 	</div>
-	<!-- eof flexslider -->
 </section>

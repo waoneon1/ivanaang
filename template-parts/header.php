@@ -49,3 +49,27 @@
 					</div>
 				</div>
 			</header>
+
+			<?php 
+				$events = get_field('event', 'option');
+				$isEvents = false;
+				$isNumber = 0;
+				$currentDate = date('d/m/Y');
+				foreach ($events as $key => $event) {
+					if ($currentDate >= $event['event_start'] && $currentDate < $event['event_end']) {
+						$isEvents = true;
+						$isNumber = $key;
+					}
+				}
+			?>
+			
+			<?php if ($isEvents): ?>
+			<div class="event-wrapper active">
+				<div class="event-body">
+					<span class="event-close js-event-close dashicons dashicons-no-alt"></span>
+					<?php if ($currentDate >= $events[$key]['event_start'] && $currentDate < $events[$key]['event_end']): ?>
+						<img src="<?php echo $events[$key]['image']['url'] ?>">
+					<?php endif ?>
+				</div>
+			</div>
+			<?php endif ?>

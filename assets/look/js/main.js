@@ -291,9 +291,9 @@ function documentReadyInit() {
 	}
 
 	//toTop
-	if (jQuery().UItoTop) {
-		jQuery().UItoTop({ easingType: 'easeOutQuart' });
-	}
+	// if (jQuery().UItoTop) {
+	// 	jQuery().UItoTop({ easingType: 'easeOutQuart' });
+	// }
 
 	//parallax
 	if (jQuery().parallax) {

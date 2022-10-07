@@ -5585,9 +5585,13 @@ body.modal-open {
 }
 
 @media (min-width: 992px) and (min-width: 1400px) {
-	.sf-menu > li > a:after {
+	/*.sf-menu > li > a:after {
 		left: 31px;
 		right: 32px;
+	}*/
+	.sf-menu > li > a:after {
+		left: 23px;
+		right: 24px;
 	}
 }
 
@@ -5762,9 +5766,13 @@ body.modal-open {
 
 /* -lg- paddings */
 @media (min-width: 1200px) {
-	.sf-menu > li > a {
+	/*.sf-menu > li > a {
 		padding-left: 23px;
 		padding-right: 24px;
+	}*/
+	.sf-menu > li > a {
+		padding-left: 19px;
+		padding-right: 20px;
 	}
 
 	.boxed .col-md-6 .sf-menu > li > a {
@@ -5774,10 +5782,10 @@ body.modal-open {
 }
 
 @media (min-width: 1400px) {
-	.sf-menu > li > a {
-		padding-left: 31px;
-		padding-right: 32px;
-	}
+	/*.sf-menu > li > a {
+		padding-left: 23px;
+		padding-right: 24px;
+	}*/
 }
 
 @media (min-width: 1650px) {
