@@ -24,7 +24,8 @@
 		"prevNextButtons": true, 
 		"cellAlign": "left", 
 		"wrapAround": true,
-		"autoPlay": 2000
+		"autoPlay": 2000,
+		"pauseAutoPlayOnHover": false
 	}'>
 		<?php for ($i=0; $i < count($data_works); $i++): ?>
 			<?php 
