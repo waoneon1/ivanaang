@@ -1,4 +1,4 @@
-	<div class="preloader">
+		<div class="preloader">
 		<div class="preloader_image"></div>
 	</div>
 
@@ -24,7 +24,7 @@
 					<div class="row">
 						<div class="col-lg-2 col-md-4 col-xs-12">
 							<a href="<?php echo home_url( '/' ) ?>" class="logo top_logo">
-								<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-text.png" alt="">
+								<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-text.png" alt="" style="max-width: 200px;">
 							</a>
 							<!-- header toggler -->
 							<span class="toggle_menu">

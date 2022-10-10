@@ -144,6 +144,7 @@ function ivang_scripts() {
 	wp_enqueue_style( 'ivang-look-main', get_template_directory_uri() . '/assets/look/css/main.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ivang-look-animations', get_template_directory_uri() . '/assets/look/css/animations.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ivang-look-fonts', get_template_directory_uri() . '/assets/look/css/fonts.css', array(), _S_VERSION );
+	wp_enqueue_style('dashicons');
 	wp_enqueue_style( 'ivang-style', get_stylesheet_uri(), array(), _S_VERSION );
 
 	wp_enqueue_script( 'ivang-jquery', get_template_directory_uri() . '/assets/look/js/vendor/jquery-3.1.0.min.js', array(), _S_VERSION, false );

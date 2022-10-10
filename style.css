@@ -269,3 +269,20 @@ ol.breadcrumb {
   top: 15px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .event-body img {
+    height: auto;
+    max-width: 90%;
+  }
+  .event-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+  }
+  .event-close {
+    right: 40px;
+    top: 4px;
+  }
+}
