@@ -1,24 +1,28 @@
-<section class="intro_section page_mainslider ds">
+<section class="intro_section page_mainslider">
 	<div class="flexslider">
 		<ul class="slides">
 			<?php $sliders = [
 				[
 					"subtitle" => "Professional Make Up artist",
 					"content" => "Hello I'am Ivanna Ang. Makeup is my passion as I enjoy making people look & feel their best. ",
-					"image" => "slide02.png"
+					"image" => "slide02.png",
+					"image-mobile" => "slide02m.png"
 				],[
 					"subtitle" => "Makeup & Hair Stylist",
 					"content" => "Hello I'am Ivanna Ang. Makeup is my passion as I enjoy making people look & feel their best. ",
-					"image" => "slide03.png"
+					"image" => "slide03.png",
+					"image-mobile" => "slide03m.png"
 				],[
 					"subtitle" => "Professional Make Up artist 2",
 					"content" => "Hello I'am Ivanna Ang. Makeup is my passion as I enjoy making people look & feel their best. ",
-					"image" => "slide04.png"
+					"image" => "slide04.png",
+					"image-mobile" => "slide04m.png"
 				]
 			] ?>
 			<?php foreach ($sliders as $key => $item): ?>
 			<li class="">
-				<img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $item['image'] ?>" alt="">
+				<img class="hidden-xs visible-sm visible-md visible-lg" src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $item['image'] ?>" alt="">
+				<img class="visible-xs hidden-sm hidden-md hidden-lg" src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $item['image-mobile'] ?>" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center text-md-right">
@@ -46,13 +50,12 @@
 												<div class="media-body">makeup@ivannaang.com</div>
 											</div>
 										</div>
-									</div>
-
-									<div class="page_social topmargin_20">
-										<a href="#" class="social-icon monochrome-icon rounded-icon soc-facebook"></a>
-										<a href="#" class="social-icon monochrome-icon rounded-icon soc-twitter"></a>
-										<a href="#" class="social-icon monochrome-icon rounded-icon soc-instagram"></a>
-										<a href="#" class="social-icon monochrome-icon rounded-icon soc-youtube"></a>
+										<div class="page_social topmargin_20">
+											<a href="#" class="social-icon monochrome-icon rounded-icon soc-facebook"></a>
+											<a href="#" class="social-icon monochrome-icon rounded-icon soc-twitter"></a>
+											<a href="#" class="social-icon monochrome-icon rounded-icon soc-instagram"></a>
+											<a href="#" class="social-icon monochrome-icon rounded-icon soc-youtube"></a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -92,26 +95,30 @@
 ?>
 <section class="ls columns_margin_0 columns_padding_0 page_portfolio">
 	<div class="container toppadding_50 bottompadding_50">
-		<div class="isotope-item col-sm-6 col-md-6 col-lg-6">
-			<div class="heading toppadding_30">
-				<p class="text-uppercase josefin grey fontsize_20">Brief Introduction</p>
-				<h2 class="section_header topmargin_5 bottommargin_0">Our beautiful works</h2>
+		<div class="row">
+			<div class="isotope-item col-sm-6 col-md-6 col-lg-6">
+				<div class="heading toppadding_30">
+					<p class="text-uppercase josefin grey fontsize_20">Brief Introduction</p>
+					<h2 class="section_header topmargin_5 bottommargin_0">Our beautiful works</h2>
+				</div>
 			</div>
 		</div>
+		<div class="row">
 		<?php foreach ($data_works as $key => $value): ?>
-			<div class="isotope-item col-sm-6 col-md-4 col-lg-2">
-				<div class="vertical-item gallery-item content-absolute text-center">
-					<div class="item-media">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-								<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>"></a>
+				<div class="iva-mobile-p isotope-item col-sm-6 col-md-4 col-lg-2">
+					<div class="vertical-item gallery-item content-absolute text-center">
+						<div class="item-media">
+							<img class="iva-mobile-port-img" src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>" alt="">
+							<div class="media-links">
+								<div class="links-wrap">
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>"></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		<?php endforeach ?>
+		</div>
 	</div>
 </section>
 
@@ -263,7 +270,7 @@
 				<p class="josefin text-uppercase grey">Blog</p>
 			</div>
 		</div>
-		<div class="">
+		<div class="row">
 			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 				<article class="vertical-item item-type1 post">
 					<div class="item-media">

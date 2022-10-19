@@ -71,6 +71,21 @@ ol.breadcrumb {
   min-height: 120;
 }
 
+@media (max-width: 991px) {
+  .intro_section .flex-control-nav, .intro_section .flex-custom-nav {
+    bottom: 20px;
+    text-align: center;
+    display:  none;
+  }
+  .iva-mobile-p {
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+  }
+  .iva-mobile-port-img {
+    width: 100%;
+  }
+}
+
 /* =================================
  * JG FRONTEND Flicky
  * ================================*/

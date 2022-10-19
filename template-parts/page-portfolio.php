@@ -18,6 +18,21 @@
 	];
 ?>
 
+<section class="ls page_portfolio section_padding_top_100">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<div class="filters isotope_filters bottommargin_60">
+					<a href="#" data-filter="*" class="selected">All</a>
+					<a href="#" data-filter=".fashion">Fashion</a>
+					<a href="#" data-filter=".session">Session</a>
+					<a href="#" data-filter=".studio">Studio</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section class="ls columns_margin_0 columns_padding_0 page_portfolio">
 	<div class="lists" style="outline: none;" data-flickity='{ 
 		"pageDots": false, 
@@ -33,8 +48,8 @@
 				$data2 = $data_works[count($data_works) - ($i+1)];
 			?>
 				<div class="item-media">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $data1['image'] ?>" alt="" style="width: 290px;display: block;">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $data2['image'] ?>" alt="" style="width: 290px;display: block;">
+					<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $data1['image'] ?>" alt="" style="width: 350px;display: block;">
+					<!-- <img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $data2['image'] ?>" alt="" style="width: 290px;display: block;"> -->
 				</div>
 		<?php endfor ?>
 	</div>
