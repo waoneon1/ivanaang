@@ -1,56 +1,41 @@
-<?php 
-	$data_works = [
-		['image' => '01.png', 'category' => 'fashion'],
-		['image' => '02.png', 'category' => 'studio'],
-		['image' => '03.png', 'category' => 'session'],
-		['image' => '04.png', 'category' => 'fashion'],
-		['image' => '05.png', 'category' => 'studio'],
-		['image' => '06.png', 'category' => 'session'],
-		['image' => '07.png', 'category' => 'fashion'],
-		['image' => '08.png', 'category' => 'studio'],
-		['image' => '09.png', 'category' => 'session'],
-		['image' => '01.png', 'category' => 'fashion'],
-		['image' => '02.png', 'category' => 'studio'],
-		['image' => '03.png', 'category' => 'session'],
-		['image' => '04.png', 'category' => 'fashion'],
-		['image' => '05.png', 'category' => 'studio'],
-		['image' => '06.png', 'category' => 'session'],
-	];
-?>
-
-<section class="ls page_portfolio section_padding_top_100">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-
-				<div class="filters isotope_filters bottommargin_60">
-					<a href="#" data-filter="*" class="selected">All</a>
-					<a href="#" data-filter=".fashion">Fashion</a>
-					<a href="#" data-filter=".session">Session</a>
-					<a href="#" data-filter=".studio">Studio</a>
+<section class="ls ms columns_margin_0 columns_padding_0 page_portfolio">
+	<div class="container-fluid">
+		<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters" style="position: relative; height: 660px;">
+			
+			<div class="isotope-item col-xs-6 col-md-4 col-lg-3 text-center fashion studio session" style="position: absolute; left: 0%; top: 0px;">
+				<div class="vertical-item content-absolute vertical-center portfolio-filters">
+					<div class="item-media" style="width: 100%; height: 250px;"></div>
+					<div class="item-content">
+						<div class="display_table">
+							<div class="display_table_cell text-left">
+								<div class="heading bottommargin_20">
+									<p class="text-uppercase josefin grey fontsize_20">Portfolio</p>
+									<h2 class="section_header topmargin_5 bottommargin_0">Our beautiful works</h2>
+								</div>
+								<div class="filters isotope_filters">
+									<a href="#" data-filter="*" class="selected active">All</a>
+									<a href="#" data-filter=".fashion" class="">Fashion</a>
+									<a href="#" data-filter=".studio" class="">Studio</a>
+									<a href="#" data-filter=".session" class="">Session</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 </section>
+
 <section class="ls columns_margin_0 columns_padding_0 page_portfolio">
 	<div class="lists" style="outline: none;" data-flickity='{ 
 		"pageDots": false, 
 		"prevNextButtons": true, 
-		"cellAlign": "left", 
 		"wrapAround": true,
 		"autoPlay": 2000,
 		"pauseAutoPlayOnHover": false
 	}'>
-		<?php for ($i=0; $i < count($data_works); $i++): ?>
-			<?php 
-				$data1 = $data_works[$i];
-				$data2 = $data_works[count($data_works) - ($i+1)];
-			?>
-				<div class="item-media">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $data1['image'] ?>" alt="" style="width: 350px;display: block;">
-					<!-- <img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $data2['image'] ?>" alt="" style="width: 290px;display: block;"> -->
-				</div>
-		<?php endfor ?>
+		<?php foreach (get_field('gallery') as $key => $item): ?>
+			<img src="<?php echo $item['image']['sizes']['medium']  ?>" alt="" style="width: 350px;height: 350px;">
+		<?php endforeach; ?>
 	</div>
 </section>

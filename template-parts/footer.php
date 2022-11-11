@@ -9,10 +9,10 @@
 						</div>
 						<div class="col-md-7 col-lg-8 text-right hidden-xs hidden-sm">
 							<div class="lightgreylinks page_social">
-								<a href="#" class="social-icon soc-facebook"></a>
-								<a href="#" class="social-icon soc-twitter"></a>
-								<a href="#" class="social-icon soc-instagram"></a>
-								<a href="#" class="social-icon soc-youtube"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['facebook'] ?>" class="social-icon soc-facebook"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['twitter'] ?>" class="social-icon soc-twitter"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['instagram'] ?>" class="social-icon soc-instagram"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['youtube'] ?>" class="social-icon soc-youtube"></a>
 							</div>
 						</div>
 					</div>
@@ -27,7 +27,11 @@
 <script type="text/javascript">
 	jQuery(document).ready(function ($) { 
 		let event = localStorage.getItem("ivanna-event");
-		if (event == "close") {
+		console.log(event != "close")
+		if (event != "close") {
+			$(".event-wrapper").addClass("active");
+			$("body").addClass("event-onbody");
+		} else {
 			$(".event-wrapper").removeClass("active");
 			$("body").removeClass("event-onbody");
 		}

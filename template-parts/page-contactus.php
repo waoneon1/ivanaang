@@ -4,24 +4,22 @@
 
 			<div class="col-md-6 col-lg-5 to_animate" data-animation="scaleAppear">
 
-				<h3 class="widget-title2 entry-title">Get Quotes</h3>
+				<h3 class="widget-title2 entry-title"><?php echo get_field('contact', 'option')['title'] ?></h3>
 
-				<p>
-				I always down to collaborate meet new people. You can shoot an e-mail to <strong>makeup@ivannaang.com</strong> or fill out the form below. Let’s get in touch! 😉
-				</p>
+				<?php echo get_field('contact', 'option')['description'] ?>
 
 				<div class="contacts-media-list topmargin_30">
 					<div class="media">
 						<div class="media-left">
 							<p class="josefin text-uppercase bold">Phone</p>
 						</div>
-						<div class="media-body">0858 8006 5002</div>
+						<div class="media-body"><?php echo get_field('info', 'option')['phone'] ?></div>
 					</div>
 					<div class="media">
 						<div class="media-left">
 							<p class="josefin text-uppercase bold">E-mail</p>
 						</div>
-						<div class="media-body">makeup@ivannaang.com</div>
+						<div class="media-body"><?php echo get_field('info', 'option')['email'] ?></div>
 					</div>
 					<div class="media">
 						<div class="media-left">
@@ -29,10 +27,10 @@
 						</div>
 						<div class="media-body">
 							<div class="post-social greylinks">
-								<a href="#" class="social-icon soc-facebook"></a>
-								<a href="#" class="social-icon soc-twitter"></a>
-								<a href="#" class="social-icon soc-instagram"></a>
-								<a href="#" class="social-icon soc-youtube"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['facebook'] ?>" class="social-icon soc-facebook"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['twitter'] ?>" class="social-icon soc-twitter"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['instagram'] ?>" class="social-icon soc-instagram"></a>
+								<a href="<?php echo get_field('info', 'option')['social_media']['youtube'] ?>" class="social-icon soc-youtube"></a>
 							</div>
 						</div>
 					</div>
@@ -41,7 +39,7 @@
 
 			<div class="col-lg-offset-1 col-md-6 to_animate" data-animation="scaleAppear">
 
-				<form class="contact-form row columns_margin_0" method="post" action="/">
+				<!-- <form class="contact-form row columns_margin_0" method="post" action="/">
 
 					<div class="col-sm-12">
 						<div class="contact-form-name bottommargin_20">
@@ -97,7 +95,10 @@
 						</div>
 					</div>
 
-				</form>
+				</form> -->
+				<div class="wp_plugin_wpform">
+					<?php echo do_shortcode(get_field('contact', 'option')['shortcode']); ?>
+				</div>
 			</div>
 
 		</div>

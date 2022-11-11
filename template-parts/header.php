@@ -1,6 +1,6 @@
-		<div class="preloader">
+	<!-- <div class="preloader">
 		<div class="preloader_image"></div>
-	</div>
+	</div> -->
 
 
 	<!-- search modal -->
@@ -64,7 +64,7 @@
 			?>
 			
 			<?php if ($isEvents): ?>
-			<div class="event-wrapper active">
+			<div class="event-wrapper">
 				<div class="event-body">
 					<span class="event-close js-event-close dashicons dashicons-no-alt"></span>
 					<?php if ($currentDate >= $events[$key]['event_start'] && $currentDate < $events[$key]['event_end']): ?>

@@ -115,6 +115,17 @@ function ivang_content_width() {
 add_action( 'after_setup_theme', 'ivang_content_width', 0 );
 
 /**
+ * Image Size Crops
+ */
+if ( ! function_exists( 'ivang_add_image_size' ) ) :
+	function ivang_add_image_size() {
+		add_image_size( 'iv_blog', 300, 415 , true );
+	}
+endif;
+add_action( 'after_setup_theme', 'ivang_add_image_size' );
+
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -177,6 +188,12 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Post Type
+ */
+require get_template_directory() . '/inc/post-type-course.php';
+require get_template_directory() . '/inc/post-type-portofolio.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
@@ -210,3 +227,23 @@ function link_active($link) {
 
 	return $active;
 }
+
+// Trim
+function iv_blurb($trim = 20, $contents = null) {
+	global $post;
+
+	if ($contents) {
+		$content = strip_tags($contents);
+	} else {
+		$content = strip_tags($post->post_content);
+	}
+
+	if ($content) {
+		$old_arr = array_map('trim', explode(' ', $content));
+		$new_arr = array_slice($old_arr, 0, $trim);
+
+		$content = implode(' ',$new_arr).' ...';
+		return $content;
+	}
+	return '';
+}  

@@ -1,67 +1,67 @@
 <?php
-add_action( 'init', 'likes_init' );
+add_action( 'init', 'course_init' );
 /**
  * Register a Job post type.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  */
-function likes_init() {
+function course_init() {
 	$labels = array(
-		'name'               => _x( 'What I Like', 'post type general name', 'aul' ),
-		'singular_name'      => _x( 'Like', 'post type singular name', 'aul' ),
-		'menu_name'          => _x( 'What I Like', 'admin menu', 'aul' ),
-		'name_admin_bar'     => _x( 'Like', 'add new on admin bar', 'aul' ),
-		'add_new'            => _x( 'Add New', 'Like', 'aul' ),
-		'add_new_item'       => __( 'Add New Like', 'aul' ),
-		'new_item'           => __( 'New Like', 'aul' ),
-		'edit_item'          => __( 'Edit Like', 'aul' ),
-		'view_item'          => __( 'View Like', 'aul' ),
-		'all_items'          => __( 'All Likes', 'aul' ),
-		'search_items'       => __( 'Search Likes', 'aul' ),
-		'parent_item_colon'  => __( 'Parent Like', 'aul' ),
-		'not_found'          => __( 'No Like found.', 'aul' ),
-		'not_found_in_trash' => __( 'No Like found in Trash.', 'aul' )
+		'name'               => _x( 'Beauty Academy', 'post type general name', 'ivang' ),
+		'singular_name'      => _x( 'Course', 'post type singular name', 'ivang' ),
+		'menu_name'          => _x( 'Beauty Academy', 'admin menu', 'ivang' ),
+		'name_admin_bar'     => _x( 'Course', 'add new on admin bar', 'ivang' ),
+		'add_new'            => _x( 'Add New', 'Course', 'ivang' ),
+		'add_new_item'       => __( 'Add New Course', 'ivang' ),
+		'new_item'           => __( 'New Course', 'ivang' ),
+		'edit_item'          => __( 'Edit Course', 'ivang' ),
+		'view_item'          => __( 'View Course', 'ivang' ),
+		'all_items'          => __( 'All Courses', 'ivang' ),
+		'search_items'       => __( 'Search Courses', 'ivang' ),
+		'parent_item_colon'  => __( 'Parent Course', 'ivang' ),
+		'not_found'          => __( 'No Course found.', 'ivang' ),
+		'not_found_in_trash' => __( 'No Course found in Trash.', 'ivang' )
 	);
 
 	$args = array(
 		'labels'             => $labels,
-		'description'        => __( 'Description.', 'aul' ),
+		'description'        => __( 'Description.', 'ivang' ),
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'likes' ),
+		'rewrite'            => array( 'slug' => 'course' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 4,
-		'menu_icon'					 => 'dashicons-heart',
+		'menu_icon'					 => 'dashicons-welcome-learn-more',
 		'supports'           => array( 'title', 'editor', 'thumbnail' )
 	);
-	register_post_type( 'likes', $args );
+	register_post_type( 'course', $args );
 }
 
-function likes_category(){
+function course_category(){
 
 	//set the name of the taxonomy
-	$taxonomy = 'likes_category';
+	$taxonomy = 'course_category';
 	//set the post types for the taxonomy
-	$object_type = 'likes';
+	$object_type = 'course';
 
 	//populate our array of names for our taxonomy
 	$labels = array(
-		'name'               => 'Like Category',
-		'singular_name'      => 'Like Category',
-		'search_items'       => 'Search Like Category',
-		'all_items'          => 'All Like Category',
-		'parent_item'        => 'Parent Like Category',
-		'parent_item_colon'  => 'Parent Like Category:',
-		'update_item'        => 'Update Like Category',
-		'edit_item'          => 'Edit Like Category',
-		'add_new_item'       => 'Add New Like Category',
-		'new_item_name'      => 'New Type Like Category',
-		'menu_name'          => 'Like Category'
+		'name'               => 'Course Category',
+		'singular_name'      => 'Course Category',
+		'search_items'       => 'Search Course Category',
+		'all_items'          => 'All Course Category',
+		'parent_item'        => 'Parent Course Category',
+		'parent_item_colon'  => 'Parent Course Category:',
+		'update_item'        => 'Update Course Category',
+		'edit_item'          => 'Edit Course Category',
+		'add_new_item'       => 'Add New Course Category',
+		'new_item_name'      => 'New Type Course Category',
+		'menu_name'          => 'Course Category'
 	);
 
 	//define arguments to be used
@@ -78,6 +78,6 @@ function likes_category(){
 	//call the register_taxonomy function
 	register_taxonomy($taxonomy, $object_type, $args);
 }
-add_action('init','likes_category');
+add_action('init','course_category');
 
 ?>

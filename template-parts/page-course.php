@@ -24,61 +24,57 @@
 	</div>
 </section>
 
-<?php 
-	$data_portofolio = [
-		['image' => '01.png', 'category' => 'fashion',  'title' => 'Consetetur sadipscing',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '02.png', 'category' => 'studio',  'title' => 'Lorem sadipscing',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '03.png', 'category' => 'session',  'title' => 'Content picingi',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '04.png', 'category' => 'fashion',  'title' => 'Make up Tutorial',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '05.png', 'category' => 'studio',  'title' => 'Praweding tutor',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '06.png', 'category' => 'session',  'title' => 'Wedding',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '07.png', 'category' => 'fashion',  'title' => 'Makeup Session',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '08.png', 'category' => 'studio',  'title' => 'Lorem sadipscing',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '09.png', 'category' => 'session',  'title' => 'Praweding tutor',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '01.png', 'category' => 'fashion',  'title' =>'Make up Tutorial',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '02.png', 'category' => 'studio',  'title' => 'Praweding tutor',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.'],
-		['image' => '03.png', 'category' => 'session',  'title' =>'Make up Tutorial',  'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias nulla dolore ipsa, exercitationem praesentium.']
-	];
-?>
 <section class="ls page_portfolio section_padding_top_100 section_padding_bottom_75">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 col-sm-push-1">
 
-
+				<?php $terms = get_terms( array(
+			    'taxonomy' => 'course_category',
+			    'hide_empty' => true,
+				))?>
 				<div class="filters isotope_filters bottommargin_60">
 					<a href="#" data-filter="*" class="selected">All</a>
-					<a href="#" data-filter=".fashion">Fashion</a>
-					<a href="#" data-filter=".session">Session</a>
-					<a href="#" data-filter=".studio">Studio</a>
+					<?php foreach ($terms as $key => $term): ?>
+						<a href="#" data-filter=".<?php echo $term->slug ?>"><?php echo $term->name ?></a>
+					<?php endforeach ?>
 				</div>
 
 				<div class="isotope_container isotope row masonry-layout columns_margin_top_0 columns_margin_bottom_30" data-filters=".isotope_filters">
 
-					<?php foreach ($data_portofolio as $key => $value): ?>
-						<div class="isotope-item col-lg-4 col-md-6 col-sm-12 <?php echo $value['category'] ?>">
+					<?php 
+						$args = array(
+						  'post_type' => 'course',
+						  'posts_per_page' => -1
+						); 
+					?>
+					<?php $query = new WP_Query($args); ?>
+					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+						<?php $terms = get_the_terms( $post->ID, 'course_category'); ?>
+  					<?php $term = $terms[0]; ?>
+						<div class="isotope-item col-lg-4 col-md-6 col-sm-12 <?php echo $term->slug ?>">
 							<div class="vertical-item content-padding gallery-extended-item with_background text-center">
 								<div class="item-media">
-									<img src="<?php echo get_template_directory_uri() ?>/assets/images/models_square/<?php echo $value['image'] ?>" alt="">
+									<img src="<?php echo get_the_post_thumbnail_url($post->id, 'medium'); ?>" alt="<?php the_title() ?>">
 									<div class="media-links">
-										<a class="abs-link" title="" href="gallery-single.html"></a>
+										<a class="abs-link" title="" href=""></a>
 									</div>
 								</div>
 								<div class="item-content">
 									<h3 class="item-title" style="min-height: 40px;display: flex;align-items: center;justify-content: center;">
-										<a href="gallery-single.html"><?php echo $value['title'] ?></a>
+										<a href="gallery-single.html"><?php the_title() ?></a>
 									</h3>
 									<span class="categories-links">
-										<a rel="category" href="gallery-extended-2-cols.html"><?php echo $value['category'] ?></a>
+										<a rel="category" href="#"><?php echo $term->name ?></a>
 									</span>
-									<p><?php echo $value['content'] ?></p>
+									<?php the_content() ?>
 									<div class="item-button">
-										<a href="gallery-single.html" class="theme_button wide_button inverse">Learn More</a>
+										<a href="#" class="theme_button wide_button inverse">Learn More</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					<?php endforeach ?>
+					<?php endwhile; wp_reset_query(); ?>
 
 				</div>
 				<!-- eof .isotope_container.row -->
