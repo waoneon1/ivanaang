@@ -62,14 +62,14 @@
 								</div>
 								<div class="item-content">
 									<h3 class="item-title" style="min-height: 40px;display: flex;align-items: center;justify-content: center;">
-										<a href="gallery-single.html"><?php the_title() ?></a>
+										<a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
 									</h3>
 									<span class="categories-links">
 										<a rel="category" href="#"><?php echo $term->name ?></a>
 									</span>
 									<?php the_content() ?>
 									<div class="item-button">
-										<a href="#" class="theme_button wide_button inverse">Learn More</a>
+										<a href="<?php echo the_permalink() ?>" class="theme_button wide_button inverse">Learn More</a>
 									</div>
 								</div>
 							</div>

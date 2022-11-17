@@ -114,7 +114,7 @@
 		<span class="m-close jg-modal-close">&times;</span>
 		<div class="m-content">
 			<h4 class="mb-5 font-bold text-base text-center"></h4>
-			<iframe class="jg-youtube" title="PWK - REUNI JUARA SUCI 7 BERUJUNG KERIBUTAN, RIDWAN REMIN MAMAT ALKATIRI DAN DANY BELER KUMPUL SEMUA" width="800" height="450" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			<iframe class="jg-modal-content" title="PWK - REUNI JUARA SUCI 7 BERUJUNG KERIBUTAN, RIDWAN REMIN MAMAT ALKATIRI DAN DANY BELER KUMPUL SEMUA" width="800" height="450" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 		</div>
 	</div>
 </div>

@@ -25,7 +25,7 @@
 	    if (!e.target.matches('.jg-modal-btn')) return;
 	    else {
 	      //select right modal from id-data
-	      $('iframe.jg-youtube').attr('src', e.target.dataset.url);
+	      $('.jg-modal-content').attr('src', e.target.dataset.url);
 
 	      var modal = document.querySelectorAll('#'+e.target.dataset.id);
 	      Array.prototype.forEach.call(modal, function (el) {
@@ -44,7 +44,7 @@
 	      // if modal have do-not-close class it will not close it self on background click
 	      if (e.target.classList.contains('do-not-close')) return;
 	      else{
-	      	$('iframe.jg-youtube').attr('src', '');
+	      	$('.jg-modal-content').attr('src', '');
 	        //remove active class on modal
 	        e.target.classList.remove('active');
 	        $('body').removeClass(['overflow-hidden','mr-overlay']);
@@ -57,7 +57,7 @@
 	    //check is the right element clicked
 	    if (!e.target.matches('.jg-modal-close-force')) return;
 	    else {
-	      $('iframe.jg-youtube').attr('src', '');
+	      $('.jg-modal-content').attr('src', '');
 	      //select right modal from id-data
 	      var modal = document.querySelectorAll('#'+e.target.dataset.close);
 	      Array.prototype.forEach.call(modal, function (el) {
@@ -73,7 +73,7 @@
 	    //check is the right element clicked
 	    if (!e.target.matches('.jg-modal-close')) return;
 	    else {
-	    	$('iframe.jg-youtube').attr('src', '');
+	    	$('.jg-modal-content').attr('src', '');
 	      //remove active class on modal
 	      e.target.parentElement.parentElement.classList.remove('active');
 	      $('body').removeClass(['overflow-hidden','mr-overlay']);
