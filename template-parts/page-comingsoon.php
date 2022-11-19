@@ -1,5 +1,5 @@
 <section class="page_breadcrumbs ls ms theme_breadcrumbs parallax section_padding_bottom_75 section_padding_top_75">
-	<div class="container" style="padding-bottom: 125px;padding-top: 125px;">
+	<div class="container" style="height: calc(100vh - 150px);	">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<div class="heading text-center bottom_border">

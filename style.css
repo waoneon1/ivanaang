@@ -300,6 +300,16 @@ ol.breadcrumb {
     right: 40px;
     top: 4px;
   }
+  .event-onbody {
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 499px) {
+  /*.event-body img {
+    height: auto;
+    max-width: 90%;
+  }*/
 }
 
 /* =================================
