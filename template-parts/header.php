@@ -19,12 +19,16 @@
 	<div id="canvas">
 		<div id="box_wrapper">
 
-			<header class="page_header header_white columns_padding_0 table_section table_section_md">
+			<header class="page_header header_white table_section table_section_md">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-2 col-md-4 col-xs-12">
 							<a href="<?php echo home_url( '/' ) ?>" class="logo top_logo">
-								<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-text.png" alt="" style="max-width: 200px;">
+								<?php if (get_field('logo', 'option')['header']): ?>
+									<img src="<?php echo get_field('logo', 'option')['header']['url'] ?>" alt="" style="max-width: 270px;">
+								<?php else: ?>
+									<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-iv.png" alt="" style="max-width: 270px;">
+								<?php endif ?>
 							</a>
 							<!-- header toggler -->
 							<span class="toggle_menu">
@@ -52,9 +56,10 @@
 
 			<?php 
 				$events = get_field('event', 'option');
+				//print_r($events);
 				$isEvents = false;
 				$isNumber = 0;
-				$currentDate = date('d/m/Y');
+				$currentDate = date('Ymd');
 				foreach ($events as $key => $event) {
 					if ($currentDate >= $event['event_start'] && $currentDate < $event['event_end']) {
 						$isEvents = true;
@@ -64,11 +69,18 @@
 			?>
 			
 			<?php if ($isEvents): ?>
-			<div class="event-wrapper">
+			<div class="event-wrapper" data-active="<?php echo $event['event_start'] . "#" . $event['event_end'] ?>">
 				<div class="event-body">
-					<span class="event-close js-event-close dashicons dashicons-no-alt"></span>
-					<?php if ($currentDate >= $events[$key]['event_start'] && $currentDate < $events[$key]['event_end']): ?>
-						<img src="<?php echo $events[$key]['image']['url'] ?>">
+					<span 
+						data-id="<?php echo $isNumber . "#" . $event['event_start'] . "#" . $event['event_end'] ?>"
+						class="event-close js-event-close dashicons dashicons-no-alt"
+					></span>
+					<?php if ($currentDate >= $events[$isNumber]['event_start'] && $currentDate < $events[$isNumber]['event_end']): ?>
+						<picture style="display: flex; justify-content: center;">
+					    <!-- <source media="(min-width: 1200px)" srcset="/img/desktop-size.png"> -->
+					    <source media="(min-width: 768px)" srcset="<?php echo $events[$isNumber]['image']['url'] ?>">
+					    <img src="<?php echo $events[$isNumber]['image_on_mobile']['url'] ?>"/>
+						</picture>
 					<?php endif ?>
 				</div>
 			</div>

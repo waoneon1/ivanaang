@@ -12,7 +12,11 @@
 								<div class="slide_description text-center">
 									<div class="heading text-center bottom_border bottommargin_25">
 										<p class="text-uppercase josefin grey"><?php echo $item['title'] ?></p>
-										<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-text.png" alt="">
+										<?php if ($item['logo']): ?>
+											<img src="<?php echo $item['logo']['url'] ?>" alt="">
+										<?php else: ?>
+											<img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-iv.png" alt="">
+										<?php endif ?>
 									</div>
 									<div class="bottommargin_40 text-left" style="">
 										<p class="">
@@ -143,10 +147,9 @@
 		<div class="row">
 			<?php $query = new WP_Query($args); ?>
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-				<?php //print_r($post) ?>
 				<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 					<article class="vertical-item item-type1 post">
-						<div class="item-media">
+						<div class="item-media" style="text-align: center">
 							<img src="<?php echo get_the_post_thumbnail_url($post->id, 'iv_blog'); ?>" alt="<?php the_title() ?>">
 						</div>
 						<div class="item-content">

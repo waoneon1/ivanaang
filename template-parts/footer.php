@@ -27,18 +27,21 @@
 <script type="text/javascript">
 	jQuery(document).ready(function ($) { 
 		let event = localStorage.getItem("ivanna-event");
-		console.log(event != "close")
-		if (event != "close") {
+		let active = $(".event-wrapper").data("active");
+
+		if (event != active) {
 			$(".event-wrapper").addClass("active");
 			$("body").addClass("event-onbody");
+			localStorage.removeItem("ivanna-event");
 		} else {
 			$(".event-wrapper").removeClass("active");
 			$("body").removeClass("event-onbody");
 		}
+
 		$(".js-event-close").on( "click", function(e) {
 			$(".event-wrapper").removeClass("active");
 			$("body").removeClass("event-onbody");
-			localStorage.setItem("ivanna-event", "close");
+			localStorage.setItem("ivanna-event", active);
 	  });
 	})
 </script>

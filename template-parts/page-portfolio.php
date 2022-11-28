@@ -44,7 +44,7 @@
 		<?php foreach (get_field('gallery') as $key => $item): ?>
 			<?php if ($current == $item['category'] || $current == 'all'): ?>
 				<img 
-					class="jg-modal-btn" data-id="modal-porto" src="<?php echo $item['image']['sizes']['medium']  ?>" alt="" style="width: 350px;height: 350px;"
+					class="jg-modal-btn" data-id="modal-porto" src="<?php echo $item['image']['sizes']['medium']  ?>" alt="" style="width: auto;height: 350px;"
 					data-url="<?php echo $item['image']['url']  ?>" 
 				>
 			<?php endif ?>

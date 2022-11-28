@@ -119,7 +119,7 @@ add_action( 'after_setup_theme', 'ivang_content_width', 0 );
  */
 if ( ! function_exists( 'ivang_add_image_size' ) ) :
 	function ivang_add_image_size() {
-		add_image_size( 'iv_blog', 300, 415 , true );
+		add_image_size( 'iv_blog', 450, 620 , true );
 	}
 endif;
 add_action( 'after_setup_theme', 'ivang_add_image_size' );
@@ -191,7 +191,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Post Type
  */
 require get_template_directory() . '/inc/post-type-course.php';
-require get_template_directory() . '/inc/post-type-portofolio.php';
+//require get_template_directory() . '/inc/post-type-portofolio.php';
 
 /**
  * Load Jetpack compatibility file.
