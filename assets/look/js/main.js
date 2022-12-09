@@ -659,7 +659,8 @@ function windowLoadInit() {
 			var $currentSlider = jQuery(this);
 			$currentSlider.flexslider({
 				animation: "fade",
-				pauseOnHover: true, 
+				pauseOnAction: false,    
+				// pauseOnHover: false, 
 				useCSS: true,
 				controlNav: true,   
 				directionNav: false,
@@ -718,6 +719,7 @@ function windowLoadInit() {
 			}
 			$currentSlider.flexslider({
 				animation: "fade",
+				pauseOnAction: false,    
 				useCSS: true,
 				controlNav: true,   
 				directionNav: false,
