@@ -77,8 +77,8 @@
 	<!-- eof flexslider -->
 </section>
 
-<!-- <section class="ls columns_margin_0 columns_padding_0 page_portfolio"> -->
-<section class="ls  page_portfolio">
+<section class="ls columns_margin_0 columns_padding_0 page_portfolio">
+<!-- <section class="ls page_portfolio"> -->
 	<div class="container toppadding_50 bottompadding_50">
 		<div class="row">
 			<div class="isotope-item col-sm-6 col-md-6 col-lg-6">
@@ -91,7 +91,7 @@
 		<div class="row">
 		<?php foreach (get_field('introduction')['image'] as $key => $item): ?>
 				<!-- <div class="iva-mobile-p isotope-item col-sm-6 col-md-4 col-lg-2"> -->
-				<div class="isotope-item col-sm-6 col-md-4 col-lg-2">
+				<div class="isotope-item col-sm-6 col-md-4 col-lg-2 iva-brief">
 					<div class="vertical-item gallery-item content-absolute text-center">
 						<div class="item-media">
 							<img class="iva-mobile-port-img" src="<?php echo $item['url'] ?>" alt="">
@@ -128,7 +128,12 @@
 											<blockquote class="no-border margin_0">
 												<div class="row">
 													<div class="col-sm-12 col-md-3 col-lg-2" style="justify-content: center;display: flex;">
-														<img class="" src="<?php echo $item['photo']['sizes']['thumbnail'] ?>" alt="" style="border-radius: 9999px;width: 100px;">
+														<!-- <img class="" src="" alt="" style="border-radius: 9999px;width: 100px;"> -->
+														<?php //print_r($item['photo']['sizes']['']) ?>
+														<picture>
+														  	<source media="(max-width: 767px)" srcset="<?php echo $item['photo']['sizes']['shop_catalog'] ?>">
+														   	<img src="<?php echo $item['photo']['sizes']['thumbnail'] ?>" style="border-radius: 9999px; max-width: 200px;">
+														</picture>
 													</div>
 													<div class="col-sm-12 col-md-9 col-lg-10">
 														<p class="testimonial-desc">
@@ -178,7 +183,7 @@
 				<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
 					<article class="vertical-item item-type1 post">
 						<div class="item-media" style="text-align: center">
-							<img src="<?php echo get_the_post_thumbnail_url($post->id, 'iv_blog'); ?>" alt="<?php the_title() ?>">
+							<img class="iva-blog-image" src="<?php echo get_the_post_thumbnail_url($post->id, 'iv_blog'); ?>" alt="<?php the_title() ?>">
 						</div>
 						<div class="item-content">
 							<div class="categories-links bottommargin_5 highlight">

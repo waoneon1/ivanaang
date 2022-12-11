@@ -104,12 +104,6 @@ a.monochrome-icon:hover {
 .testimonial-desc {
   text-align: left;
 }
-@media (max-width: 991px) {
-  .testimonial-desc {
-    margin-top: 30px;
-    text-align: center;
-  }
-}
 
 /* parallax */
 .parallax.cs:after {
@@ -119,7 +113,19 @@ a.monochrome-icon:hover {
   opacity: 0.9;
 }
 
+@media (max-width: 767px) {
+  .isotope-item[class*='col-'].iva-brief {
+    margin-bottom: 15px;
+  }
+  .iva-blog-image {
+    width: 100%;
+  }
+}
 @media (max-width: 991px) {
+  .testimonial-desc {
+    margin-top: 30px;
+    text-align: center;
+  }
   .intro_section .flex-control-nav, .intro_section .flex-custom-nav {
     bottom: 20px;
     text-align: center;
